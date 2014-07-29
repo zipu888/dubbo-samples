@@ -938,3 +938,689 @@ return extension.getConfigurator(arg0);
 [VAMS][2014-07-24 14:14:52,491] INFO |  [DUBBO] Close NettyServer bind /0.0.0.0:20880, export /192.168.1.35:20880, dubbo version: 2.5.3, current host: 192.168.1.35 | [DubboShutdownHook] com.alibaba.dubbo.remoting.transport.AbstractServer.close(146)
 [VAMS][2014-07-24 14:14:52,492] INFO |  [DUBBO] Unexport service: dubbo://192.168.1.35:20880/com.xiaohao.serviceApi.DemoService?anyhost=true&application=dubboDemo&dubbo=2.5.3&interface=com.xiaohao.serviceApi.DemoService&methods=sayHello&pid=16844&side=provider&timestamp=1406182491861, dubbo version: 2.5.3, current host: 192.168.1.35 | [DubboShutdownHook] com.alibaba.dubbo.rpc.protocol.AbstractProtocol.destroy(76)
 [VAMS][2014-07-24 14:14:52,493] INFO |  [DUBBO] Unexport service: injvm://127.0.0.1/com.xiaohao.serviceApi.DemoService?anyhost=true&application=dubboDemo&dubbo=2.5.3&interface=com.xiaohao.serviceApi.DemoService&methods=sayHello&pid=16844&side=provider&timestamp=1406182491861, dubbo version: 2.5.3, current host: 192.168.1.35 | [DubboShutdownHook] com.alibaba.dubbo.rpc.protocol.AbstractProtocol.destroy(76)
+[VAMS][2014-07-29 15:01:08,110] INFO | Root WebApplicationContext: initialization started | [main] org.springframework.web.context.ContextLoader.initWebApplicationContext(285)
+[VAMS][2014-07-29 15:01:08,212] DEBUG | Adding [servletConfigInitParams] PropertySource with lowest search precedence | [main] org.springframework.core.env.MutablePropertySources.addLast(110)
+[VAMS][2014-07-29 15:01:08,213] DEBUG | Adding [servletContextInitParams] PropertySource with lowest search precedence | [main] org.springframework.core.env.MutablePropertySources.addLast(110)
+[VAMS][2014-07-29 15:01:08,229] DEBUG | Adding [jndiProperties] PropertySource with lowest search precedence | [main] org.springframework.core.env.MutablePropertySources.addLast(110)
+[VAMS][2014-07-29 15:01:08,230] DEBUG | Adding [systemProperties] PropertySource with lowest search precedence | [main] org.springframework.core.env.MutablePropertySources.addLast(110)
+[VAMS][2014-07-29 15:01:08,231] DEBUG | Adding [systemEnvironment] PropertySource with lowest search precedence | [main] org.springframework.core.env.MutablePropertySources.addLast(110)
+[VAMS][2014-07-29 15:01:08,232] DEBUG | Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment] | [main] org.springframework.core.env.AbstractEnvironment.<init>(126)
+[VAMS][2014-07-29 15:01:08,236] DEBUG | Replacing [servletContextInitParams] PropertySource with [servletContextInitParams] | [main] org.springframework.core.env.MutablePropertySources.replace(175)
+[VAMS][2014-07-29 15:01:08,237] INFO | Refreshing Root WebApplicationContext: startup date [Tue Jul 29 15:01:08 CST 2014]; root of context hierarchy | [main] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(513)
+[VAMS][2014-07-29 15:01:08,361] DEBUG | Adding [systemProperties] PropertySource with lowest search precedence | [main] org.springframework.core.env.MutablePropertySources.addLast(110)
+[VAMS][2014-07-29 15:01:08,361] DEBUG | Adding [systemEnvironment] PropertySource with lowest search precedence | [main] org.springframework.core.env.MutablePropertySources.addLast(110)
+[VAMS][2014-07-29 15:01:08,362] DEBUG | Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment] | [main] org.springframework.core.env.AbstractEnvironment.<init>(126)
+[VAMS][2014-07-29 15:01:08,369] INFO | Loading XML bean definitions from class path resource [dubbo.xml] | [main] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(316)
+[VAMS][2014-07-29 15:01:08,402] DEBUG | Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl] | [main] org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(73)
+[VAMS][2014-07-29 15:01:08,517] DEBUG | Loading schema mappings from [META-INF/spring.schemas] | [main] org.springframework.beans.factory.xml.PluggableSchemaResolver.getSchemaMappings(141)
+[VAMS][2014-07-29 15:01:08,521] DEBUG | Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://cxf.apache.org/configuration/parameterized-types=schemas/configuration/parameterized-types.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://schemas.xmlsoap.org/ws/2004/08/addressing=schemas/wsdl/addressing.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.0.xsd=org/springframework/webflow/config/spring-webflow-config-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://schemas.xmlsoap.org/wsdl/=schemas/wsdl/wsdl.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://schemas.xmlsoap.org/wsdl/http/=schemas/wsdl/http.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://code.alibabatech.com/schema/dubbo/dubbo.xsd=META-INF/dubbo.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/data/orcl/spring-data-orcl-1.0.xsd=org/springframework/data/jdbc/config/oracle/spring-data-orcl-1.0.xsd, http://cxf.apache.org/schemas/configuration/parameterized-types.xsd=schemas/configuration/parameterized-types.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.4.xsd=org/springframework/webflow/config/spring-webflow-config-2.4.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://schemas.xmlsoap.org/wsdl/2003-02-11.xsd=schemas/wsdl/wsdl.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/webflow-config/spring-webflow-config-2.3.xsd=org/springframework/webflow/config/spring-webflow-config-2.3.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://cxf.apache.org/schemas/configuration/cxf-beans.xsd=schemas/configuration/cxf-beans.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://cxf.apache.org/schemas/core.xsd=schemas/core.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/webflow-config/spring-webflow-config.xsd=org/springframework/webflow/config/spring-webflow-config-2.4.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://cxf.apache.org/schemas/configuration/security.xsd=schemas/configuration/security.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://cxf.apache.org/schemas/configuration/soap.xsd=schemas/configuration/soap.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://cxf.apache.org/schemas/simple.xsd=schemas/simple.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.0.xsd} | [main] org.springframework.beans.factory.xml.PluggableSchemaResolver.getSchemaMappings(147)
+[VAMS][2014-07-29 15:01:08,528] DEBUG | Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd | [main] org.springframework.beans.factory.xml.PluggableSchemaResolver.resolveEntity(119)
+[VAMS][2014-07-29 15:01:08,566] DEBUG | Found XML schema [http://code.alibabatech.com/schema/dubbo/dubbo.xsd] in classpath: META-INF/dubbo.xsd | [main] org.springframework.beans.factory.xml.PluggableSchemaResolver.resolveEntity(119)
+[VAMS][2014-07-29 15:01:08,583] DEBUG | Loading bean definitions | [main] org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(108)
+[VAMS][2014-07-29 15:01:08,599] DEBUG | Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/webflow-config=org.springframework.webflow.config.WebFlowConfigNamespaceHandler, http://code.alibabatech.com/schema/dubbo=com.alibaba.dubbo.config.spring.schema.DubboNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/data/orcl=org.springframework.data.jdbc.config.oracle.DataOrclNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://cxf.apache.org/simple=org.apache.cxf.frontend.spring.NamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler, http://cxf.apache.org/core=org.apache.cxf.bus.spring.NamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://cxf.apache.org/bindings/soap=org.apache.cxf.binding.soap.spring.NamespaceHandler} | [main] org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.getHandlerMappings(157)
+[VAMS][2014-07-29 15:01:08,605] INFO | using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter | [main] ?.?(?)
+[VAMS][2014-07-29 15:01:08,640] DEBUG | Loaded 5 bean definitions from location pattern [classpath:dubbo.xml] | [main] org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(223)
+[VAMS][2014-07-29 15:01:08,640] DEBUG | Bean factory for Root WebApplicationContext: org.springframework.beans.factory.support.DefaultListableBeanFactory@19c86c5: defining beans [dubboDemo,com.alibaba.dubbo.config.RegistryConfig,dubbo,com.xiaohao.serviceApi.DemoService,demoService]; root of factory hierarchy | [main] org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(543)
+[VAMS][2014-07-29 15:01:08,661] DEBUG | Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@1ab9dac] | [main] org.springframework.context.support.AbstractApplicationContext.initMessageSource(649)
+[VAMS][2014-07-29 15:01:08,663] DEBUG | Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@152506e] | [main] org.springframework.context.support.AbstractApplicationContext.initApplicationEventMulticaster(673)
+[VAMS][2014-07-29 15:01:08,665] DEBUG | Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@fc5408] | [main] org.springframework.ui.context.support.UiApplicationContextUtils.initThemeSource(85)
+[VAMS][2014-07-29 15:01:08,666] DEBUG | Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@19c86c5: defining beans [dubboDemo,com.alibaba.dubbo.config.RegistryConfig,dubbo,com.xiaohao.serviceApi.DemoService,demoService]; root of factory hierarchy | [main] org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(672)
+[VAMS][2014-07-29 15:01:08,667] DEBUG | Creating shared instance of singleton bean 'dubboDemo' | [main] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(220)
+[VAMS][2014-07-29 15:01:08,667] DEBUG | Creating instance of bean 'dubboDemo' | [main] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(449)
+[VAMS][2014-07-29 15:01:08,708] DEBUG | Eagerly caching bean 'dubboDemo' to allow for resolving potential circular references | [main] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(523)
+[VAMS][2014-07-29 15:01:08,734] DEBUG | Finished creating instance of bean 'dubboDemo' | [main] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(477)
+[VAMS][2014-07-29 15:01:08,734] DEBUG | Creating shared instance of singleton bean 'com.alibaba.dubbo.config.RegistryConfig' | [main] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(220)
+[VAMS][2014-07-29 15:01:08,734] DEBUG | Creating instance of bean 'com.alibaba.dubbo.config.RegistryConfig' | [main] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(449)
+[VAMS][2014-07-29 15:01:08,735] DEBUG | Eagerly caching bean 'com.alibaba.dubbo.config.RegistryConfig' to allow for resolving potential circular references | [main] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(523)
+[VAMS][2014-07-29 15:01:08,740] DEBUG | Finished creating instance of bean 'com.alibaba.dubbo.config.RegistryConfig' | [main] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(477)
+[VAMS][2014-07-29 15:01:08,741] DEBUG | Creating shared instance of singleton bean 'dubbo' | [main] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(220)
+[VAMS][2014-07-29 15:01:08,741] DEBUG | Creating instance of bean 'dubbo' | [main] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(449)
+[VAMS][2014-07-29 15:01:08,741] DEBUG | Eagerly caching bean 'dubbo' to allow for resolving potential circular references | [main] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(523)
+[VAMS][2014-07-29 15:01:08,749] DEBUG | Finished creating instance of bean 'dubbo' | [main] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(477)
+[VAMS][2014-07-29 15:01:08,750] DEBUG | Creating shared instance of singleton bean 'com.xiaohao.serviceApi.DemoService' | [main] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(220)
+[VAMS][2014-07-29 15:01:08,750] DEBUG | Creating instance of bean 'com.xiaohao.serviceApi.DemoService' | [main] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(449)
+[VAMS][2014-07-29 15:01:08,784] DEBUG |  [DUBBO] package com.alibaba.dubbo.rpc;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Protocol$Adpative implements com.alibaba.dubbo.rpc.Protocol {
+public com.alibaba.dubbo.rpc.Exporter export(com.alibaba.dubbo.rpc.Invoker arg0) throws com.alibaba.dubbo.rpc.Invoker {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.Protocol) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.Protocol extension = (com.alibaba.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.export(arg0);
+}
+public com.alibaba.dubbo.rpc.Invoker refer(java.lang.Class arg0, com.alibaba.dubbo.common.URL arg1) throws java.lang.Class {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg1;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.Protocol) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.Protocol extension = (com.alibaba.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.refer(arg0, arg1);
+}
+public void destroy() {throw new UnsupportedOperationException("method public abstract void com.alibaba.dubbo.rpc.Protocol.destroy() of interface com.alibaba.dubbo.rpc.Protocol is not adaptive method!");
+}
+public int getDefaultPort() {throw new UnsupportedOperationException("method public abstract int com.alibaba.dubbo.rpc.Protocol.getDefaultPort() of interface com.alibaba.dubbo.rpc.Protocol is not adaptive method!");
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.common.extension.ExtensionLoader.createAdaptiveExtensionClassCode(943)
+[VAMS][2014-07-29 15:01:08,918] DEBUG |  [DUBBO] package com.alibaba.dubbo.rpc;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ProxyFactory$Adpative implements com.alibaba.dubbo.rpc.ProxyFactory {
+public java.lang.Object getProxy(com.alibaba.dubbo.rpc.Invoker arg0) throws com.alibaba.dubbo.rpc.Invoker {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.ProxyFactory) name from url(" + url.toString() + ") use keys([proxy])");
+com.alibaba.dubbo.rpc.ProxyFactory extension = (com.alibaba.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getProxy(arg0);
+}
+public com.alibaba.dubbo.rpc.Invoker getInvoker(java.lang.Object arg0, java.lang.Class arg1, com.alibaba.dubbo.common.URL arg2) throws java.lang.Object {
+if (arg2 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg2;
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.ProxyFactory) name from url(" + url.toString() + ") use keys([proxy])");
+com.alibaba.dubbo.rpc.ProxyFactory extension = (com.alibaba.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getInvoker(arg0, arg1, arg2);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.common.extension.ExtensionLoader.createAdaptiveExtensionClassCode(943)
+[VAMS][2014-07-29 15:01:08,927] DEBUG | Eagerly caching bean 'com.xiaohao.serviceApi.DemoService' to allow for resolving potential circular references | [main] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(523)
+[VAMS][2014-07-29 15:01:08,933] DEBUG | Creating shared instance of singleton bean 'demoService' | [main] org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(220)
+[VAMS][2014-07-29 15:01:08,933] DEBUG | Creating instance of bean 'demoService' | [main] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(449)
+[VAMS][2014-07-29 15:01:08,933] DEBUG | Eagerly caching bean 'demoService' to allow for resolving potential circular references | [main] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(523)
+[VAMS][2014-07-29 15:01:08,934] DEBUG | Finished creating instance of bean 'demoService' | [main] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(477)
+[VAMS][2014-07-29 15:01:08,938] DEBUG | Invoking afterPropertiesSet() on bean with name 'com.xiaohao.serviceApi.DemoService' | [main] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(1595)
+[VAMS][2014-07-29 15:01:08,939] DEBUG | Returning cached instance of singleton bean 'dubboDemo' | [main] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(247)
+[VAMS][2014-07-29 15:01:08,939] DEBUG | Returning cached instance of singleton bean 'com.alibaba.dubbo.config.RegistryConfig' | [main] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(247)
+[VAMS][2014-07-29 15:01:08,939] DEBUG | Returning cached instance of singleton bean 'dubbo' | [main] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(247)
+[VAMS][2014-07-29 15:01:08,939] DEBUG | Finished creating instance of bean 'com.xiaohao.serviceApi.DemoService' | [main] org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(477)
+[VAMS][2014-07-29 15:01:08,940] DEBUG | Returning cached instance of singleton bean 'demoService' | [main] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(247)
+[VAMS][2014-07-29 15:01:08,941] DEBUG | Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@19facbc] | [main] org.springframework.context.support.AbstractApplicationContext.initLifecycleProcessor(700)
+[VAMS][2014-07-29 15:01:08,941] DEBUG | Returning cached instance of singleton bean 'lifecycleProcessor' | [main] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(247)
+[VAMS][2014-07-29 15:01:08,945] DEBUG | Returning cached instance of singleton bean 'com.xiaohao.serviceApi.DemoService' | [main] org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(247)
+[VAMS][2014-07-29 15:01:08,945] INFO |  [DUBBO] The service ready on spring started. service: com.xiaohao.serviceApi.DemoService, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(107)
+[VAMS][2014-07-29 15:01:09,040] DEBUG |  [DUBBO] package com.alibaba.dubbo.validation;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Validation$Adpative implements com.alibaba.dubbo.validation.Validation {
+public com.alibaba.dubbo.validation.Validator getValidator(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("validation", "jvalidation");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.validation.Validation) name from url(" + url.toString() + ") use keys([validation])");
+com.alibaba.dubbo.validation.Validation extension = (com.alibaba.dubbo.validation.Validation)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.validation.Validation.class).getExtension(extName);
+return extension.getValidator(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.common.extension.ExtensionLoader.createAdaptiveExtensionClassCode(943)
+[VAMS][2014-07-29 15:01:09,050] DEBUG |  [DUBBO] package com.alibaba.dubbo.monitor;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class MonitorFactory$Adpative implements com.alibaba.dubbo.monitor.MonitorFactory {
+public com.alibaba.dubbo.monitor.Monitor getMonitor(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.monitor.MonitorFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.monitor.MonitorFactory extension = (com.alibaba.dubbo.monitor.MonitorFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.monitor.MonitorFactory.class).getExtension(extName);
+return extension.getMonitor(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.common.extension.ExtensionLoader.createAdaptiveExtensionClassCode(943)
+[VAMS][2014-07-29 15:01:09,060] DEBUG |  [DUBBO] package com.alibaba.dubbo.cache;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class CacheFactory$Adpative implements com.alibaba.dubbo.cache.CacheFactory {
+public com.alibaba.dubbo.cache.Cache getCache(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("cache", "lru");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.cache.CacheFactory) name from url(" + url.toString() + ") use keys([cache])");
+com.alibaba.dubbo.cache.CacheFactory extension = (com.alibaba.dubbo.cache.CacheFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.cache.CacheFactory.class).getExtension(extName);
+return extension.getCache(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.common.extension.ExtensionLoader.createAdaptiveExtensionClassCode(943)
+[VAMS][2014-07-29 15:01:09,069] INFO |  [DUBBO] Export dubbo service com.xiaohao.serviceApi.DemoService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.config.ServiceConfig.exportLocal(510)
+[VAMS][2014-07-29 15:01:09,069] INFO |  [DUBBO] Export dubbo service com.xiaohao.serviceApi.DemoService to url dubbo://192.168.1.35:20880/com.xiaohao.serviceApi.DemoService?anyhost=true&application=dubboDemo&dubbo=2.5.3&interface=com.xiaohao.serviceApi.DemoService&methods=sayHello&pid=5764&side=provider&timestamp=1406617268963, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(470)
+[VAMS][2014-07-29 15:01:09,070] INFO |  [DUBBO] Register dubbo service com.xiaohao.serviceApi.DemoService url dubbo://192.168.1.35:20880/com.xiaohao.serviceApi.DemoService?anyhost=true&application=dubboDemo&dubbo=2.5.3&interface=com.xiaohao.serviceApi.DemoService&methods=sayHello&pid=5764&side=provider&timestamp=1406617268963 to registry registry://192.168.1.35:2181/com.alibaba.dubbo.registry.RegistryService?application=dubboDemo&dubbo=2.5.3&pid=5764&registry=zookeeper&timestamp=1406617268956, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(481)
+[VAMS][2014-07-29 15:01:09,099] DEBUG |  [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Cluster$Adpative implements com.alibaba.dubbo.rpc.cluster.Cluster {
+public com.alibaba.dubbo.rpc.Invoker join(com.alibaba.dubbo.rpc.cluster.Directory arg0) throws com.alibaba.dubbo.rpc.cluster.Directory {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.cluster.Directory argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.cluster.Directory argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("cluster", "failover");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.Cluster) name from url(" + url.toString() + ") use keys([cluster])");
+com.alibaba.dubbo.rpc.cluster.Cluster extension = (com.alibaba.dubbo.rpc.cluster.Cluster)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.Cluster.class).getExtension(extName);
+return extension.join(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.common.extension.ExtensionLoader.createAdaptiveExtensionClassCode(943)
+[VAMS][2014-07-29 15:01:09,108] DEBUG |  [DUBBO] package com.alibaba.dubbo.registry;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class RegistryFactory$Adpative implements com.alibaba.dubbo.registry.RegistryFactory {
+public com.alibaba.dubbo.registry.Registry getRegistry(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.registry.RegistryFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.registry.RegistryFactory extension = (com.alibaba.dubbo.registry.RegistryFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.registry.RegistryFactory.class).getExtension(extName);
+return extension.getRegistry(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.common.extension.ExtensionLoader.createAdaptiveExtensionClassCode(943)
+[VAMS][2014-07-29 15:01:09,129] DEBUG |  [DUBBO] package com.alibaba.dubbo.remoting;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Transporter$Adpative implements com.alibaba.dubbo.remoting.Transporter {
+public com.alibaba.dubbo.remoting.Client connect(com.alibaba.dubbo.common.URL arg0, com.alibaba.dubbo.remoting.ChannelHandler arg1) throws com.alibaba.dubbo.common.URL {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("client", url.getParameter("transporter", "netty"));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.Transporter) name from url(" + url.toString() + ") use keys([client, transporter])");
+com.alibaba.dubbo.remoting.Transporter extension = (com.alibaba.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.connect(arg0, arg1);
+}
+public com.alibaba.dubbo.remoting.Server bind(com.alibaba.dubbo.common.URL arg0, com.alibaba.dubbo.remoting.ChannelHandler arg1) throws com.alibaba.dubbo.common.URL {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("server", url.getParameter("transporter", "netty"));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.Transporter) name from url(" + url.toString() + ") use keys([server, transporter])");
+com.alibaba.dubbo.remoting.Transporter extension = (com.alibaba.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.bind(arg0, arg1);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.common.extension.ExtensionLoader.createAdaptiveExtensionClassCode(943)
+[VAMS][2014-07-29 15:01:09,227] DEBUG |  [DUBBO] package com.alibaba.dubbo.remoting;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Dispatcher$Adpative implements com.alibaba.dubbo.remoting.Dispatcher {
+public com.alibaba.dubbo.remoting.ChannelHandler dispatch(com.alibaba.dubbo.remoting.ChannelHandler arg0, com.alibaba.dubbo.common.URL arg1) {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg1;
+String extName = url.getParameter("dispatcher", url.getParameter("dispather", url.getParameter("channel.handler", "all")));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.Dispatcher) name from url(" + url.toString() + ") use keys([dispatcher, dispather, channel.handler])");
+com.alibaba.dubbo.remoting.Dispatcher extension = (com.alibaba.dubbo.remoting.Dispatcher)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Dispatcher.class).getExtension(extName);
+return extension.dispatch(arg0, arg1);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.common.extension.ExtensionLoader.createAdaptiveExtensionClassCode(943)
+[VAMS][2014-07-29 15:01:09,238] DEBUG |  [DUBBO] package com.alibaba.dubbo.common.threadpool;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ThreadPool$Adpative implements com.alibaba.dubbo.common.threadpool.ThreadPool {
+public java.util.concurrent.Executor getExecutor(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("threadpool", "fixed");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.common.threadpool.ThreadPool) name from url(" + url.toString() + ") use keys([threadpool])");
+com.alibaba.dubbo.common.threadpool.ThreadPool extension = (com.alibaba.dubbo.common.threadpool.ThreadPool)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.common.threadpool.ThreadPool.class).getExtension(extName);
+return extension.getExecutor(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.common.extension.ExtensionLoader.createAdaptiveExtensionClassCode(943)
+[VAMS][2014-07-29 15:01:09,289] DEBUG |  [DUBBO] Using the autodetected NIO constraint level: 0, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.remoting.transport.netty.NettyHelper$DubboLogger.debug(70)
+[VAMS][2014-07-29 15:01:09,331] INFO |  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.1.35:20880, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(69)
+[VAMS][2014-07-29 15:01:09,337] DEBUG |  [DUBBO] package com.alibaba.dubbo.remoting.zookeeper;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ZookeeperTransporter$Adpative implements com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter {
+public com.alibaba.dubbo.remoting.zookeeper.ZookeeperClient connect(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("client", url.getParameter("transporter", "zkclient"));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter) name from url(" + url.toString() + ") use keys([client, transporter])");
+com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter extension = (com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter.class).getExtension(extName);
+return extension.connect(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.common.extension.ExtensionLoader.createAdaptiveExtensionClassCode(943)
+[VAMS][2014-07-29 15:01:09,386] INFO |  [DUBBO] Load registry store file C:\Users\xiaohao\.dubbo\dubbo-registry-192.168.1.35.cache, data: {com.xiaohao.dubbo.demo.service.DemoService=dubbo://192.168.1.35:20880/com.xiaohao.dubbo.demo.service.DemoService?anyhost=true&application=dubboDemo&dubbo=2.5.3&interface=com.xiaohao.dubbo.demo.service.DemoService&methods=sayHello&pid=5656&side=provider&timestamp=1406274904116 dubbo://192.168.1.35:20880/com.xiaohao.dubbo.demo.service.DemoService?anyhost=true&application=dubboDemo&dubbo=2.5.3&interface=com.xiaohao.dubbo.demo.service.DemoService&methods=sayHello&pid=5656&side=provider&timestamp=1406274905494 empty://192.168.1.35/com.xiaohao.dubbo.demo.service.DemoService?application=dubboDemo&category=configurators&dubbo=2.5.3&interface=com.xiaohao.dubbo.demo.service.DemoService&methods=sayHello&pid=5480&side=consumer&timestamp=1406274942293 empty://192.168.1.35/com.xiaohao.dubbo.demo.service.DemoService?application=dubboDemo&category=routers&dubbo=2.5.3&interface=com.xiaohao.dubbo.demo.service.DemoService&methods=sayHello&pid=5480&side=consumer&timestamp=1406274942293, com.xiaohao.serviceApi.DemoService=empty://192.168.1.35:20880/com.xiaohao.serviceApi.DemoService?anyhost=true&application=dubboDemo&category=configurators&check=false&dubbo=2.5.3&interface=com.xiaohao.serviceApi.DemoService&methods=sayHello&pid=16844&side=provider&timestamp=1406182491861}, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(232)
+[VAMS][2014-07-29 15:01:09,411] DEBUG | Creating new ZookKeeper instance to connect to 192.168.1.35:2181. | [main] org.I0Itec.zkclient.ZkConnection.connect(63)
+[VAMS][2014-07-29 15:01:09,411] INFO | Starting ZkClient event thread. | [ZkClient-EventThread-22-192.168.1.35:2181] org.I0Itec.zkclient.ZkEventThread.run(64)
+[VAMS][2014-07-29 15:01:09,422] INFO | Client environment:zookeeper.version=3.3.3-1073969, built on 02/23/2011 22:27 GMT | [main] org.apache.zookeeper.Environment.logEnv(97)
+[VAMS][2014-07-29 15:01:09,422] INFO | Client environment:host.name=xiaohao-PC | [main] org.apache.zookeeper.Environment.logEnv(97)
+[VAMS][2014-07-29 15:01:09,422] INFO | Client environment:java.version=1.6.0_24 | [main] org.apache.zookeeper.Environment.logEnv(97)
+[VAMS][2014-07-29 15:01:09,422] INFO | Client environment:java.vendor=Sun Microsystems Inc. | [main] org.apache.zookeeper.Environment.logEnv(97)
+[VAMS][2014-07-29 15:01:09,423] INFO | Client environment:java.home=C:\Program Files (x86)\Java\jdk1.6.0_24\jre | [main] org.apache.zookeeper.Environment.logEnv(97)
+[VAMS][2014-07-29 15:01:09,423] INFO | Client environment:java.class.path=C:\maven\boot\plexus-classworlds-2.4.jar;D:\Users\xiaohao\AppData\Roaming\JetBrains\IntelliJ IDEA 13.1.3\lib\idea_rt.jar | [main] org.apache.zookeeper.Environment.logEnv(97)
+[VAMS][2014-07-29 15:01:09,423] INFO | Client environment:java.library.path=C:\Program Files (x86)\Java\jdk1.6.0_24\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\NetSarang;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\maven\bin;C:\Program Files (x86)\Java\jdk1.6.0_24\bin;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files\TortoiseGit\bin;$GRAILS_HOME/bin | [main] org.apache.zookeeper.Environment.logEnv(97)
+[VAMS][2014-07-29 15:01:09,423] INFO | Client environment:java.io.tmpdir=C:\Users\xiaohao\AppData\Local\Temp\ | [main] org.apache.zookeeper.Environment.logEnv(97)
+[VAMS][2014-07-29 15:01:09,424] INFO | Client environment:java.compiler=<NA> | [main] org.apache.zookeeper.Environment.logEnv(97)
+[VAMS][2014-07-29 15:01:09,424] INFO | Client environment:os.name=Windows 7 | [main] org.apache.zookeeper.Environment.logEnv(97)
+[VAMS][2014-07-29 15:01:09,424] INFO | Client environment:os.arch=x86 | [main] org.apache.zookeeper.Environment.logEnv(97)
+[VAMS][2014-07-29 15:01:09,424] INFO | Client environment:os.version=6.1 | [main] org.apache.zookeeper.Environment.logEnv(97)
+[VAMS][2014-07-29 15:01:09,425] INFO | Client environment:user.name=xiaohao | [main] org.apache.zookeeper.Environment.logEnv(97)
+[VAMS][2014-07-29 15:01:09,425] INFO | Client environment:user.home=C:\Users\xiaohao | [main] org.apache.zookeeper.Environment.logEnv(97)
+[VAMS][2014-07-29 15:01:09,425] INFO | Client environment:user.dir=F:\myCode\dubbodemo | [main] org.apache.zookeeper.Environment.logEnv(97)
+[VAMS][2014-07-29 15:01:09,426] INFO | Initiating client connection, connectString=192.168.1.35:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@d557c2 | [main] org.apache.zookeeper.ZooKeeper.<init>(373)
+[VAMS][2014-07-29 15:01:09,428] DEBUG | zookeeper.disableAutoWatchReset is false | [main] org.apache.zookeeper.ClientCnxn.<clinit>(99)
+[VAMS][2014-07-29 15:01:09,438] DEBUG | Awaiting connection to Zookeeper server | [main] org.I0Itec.zkclient.ZkClient.connect(874)
+[VAMS][2014-07-29 15:01:09,438] INFO | Opening socket connection to server /192.168.1.35:2181 | [main-SendThread()] org.apache.zookeeper.ClientCnxn$SendThread.startConnect(1041)
+[VAMS][2014-07-29 15:01:09,438] DEBUG | Waiting for keeper state SyncConnected | [main] org.I0Itec.zkclient.ZkClient.waitForKeeperState(628)
+[VAMS][2014-07-29 15:01:09,440] INFO | Socket connection established to xiaohao-PC/192.168.1.35:2181, initiating session | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(949)
+[VAMS][2014-07-29 15:01:09,442] DEBUG | Session establishment request sent on xiaohao-PC/192.168.1.35:2181 | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(996)
+[VAMS][2014-07-29 15:01:09,469] INFO | Session establishment complete on server xiaohao-PC/192.168.1.35:2181, sessionid = 0x14780049d280001, negotiated timeout = 30000 | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readConnectResult(738)
+[VAMS][2014-07-29 15:01:09,470] DEBUG | Received event: WatchedEvent state:SyncConnected type:None path:null | [main-EventThread] org.I0Itec.zkclient.ZkClient.process(351)
+[VAMS][2014-07-29 15:01:09,471] INFO | zookeeper state changed (SyncConnected) | [main-EventThread] org.I0Itec.zkclient.ZkClient.processStateChanged(449)
+[VAMS][2014-07-29 15:01:09,471] DEBUG | Leaving process event | [main-EventThread] org.I0Itec.zkclient.ZkClient.process(395)
+[VAMS][2014-07-29 15:01:09,471] DEBUG | State is SyncConnected | [main] org.I0Itec.zkclient.ZkClient.waitForKeeperState(638)
+[VAMS][2014-07-29 15:01:09,472] INFO |  [DUBBO] Register: dubbo://192.168.1.35:20880/com.xiaohao.serviceApi.DemoService?anyhost=true&application=dubboDemo&dubbo=2.5.3&interface=com.xiaohao.serviceApi.DemoService&methods=sayHello&pid=5764&side=provider&timestamp=1406617268963, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.registry.support.AbstractRegistry.register(302)
+[VAMS][2014-07-29 15:01:09,500] DEBUG | Reading reply sessionid:0x14780049d280001, packet:: clientPath:null serverPath:null finished:false header:: 1,1  replyHeader:: 1,106,-110  request:: '/dubbo,,v{s{31,s{'world,'anyone}}},0  response::   | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(838)
+[VAMS][2014-07-29 15:01:09,524] DEBUG | Reading reply sessionid:0x14780049d280001, packet:: clientPath:null serverPath:null finished:false header:: 2,1  replyHeader:: 2,107,-110  request:: '/dubbo/com.xiaohao.serviceApi.DemoService,,v{s{31,s{'world,'anyone}}},0  response::   | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(838)
+[VAMS][2014-07-29 15:01:09,536] DEBUG | Reading reply sessionid:0x14780049d280001, packet:: clientPath:null serverPath:null finished:false header:: 3,1  replyHeader:: 3,108,-110  request:: '/dubbo/com.xiaohao.serviceApi.DemoService/providers,,v{s{31,s{'world,'anyone}}},0  response::   | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(838)
+[VAMS][2014-07-29 15:01:09,548] DEBUG | Reading reply sessionid:0x14780049d280001, packet:: clientPath:null serverPath:null finished:false header:: 4,1  replyHeader:: 4,109,0  request:: '/dubbo/com.xiaohao.serviceApi.DemoService/providers/dubbo%253A%252F%252F192.168.1.35%253A20880%252Fcom.xiaohao.serviceApi.DemoService%253Fanyhost%253Dtrue%2526application%253DdubboDemo%2526dubbo%253D2.5.3%2526interface%253Dcom.xiaohao.serviceApi.DemoService%2526methods%253DsayHello%2526pid%253D5764%2526side%253Dprovider%2526timestamp%253D1406617268963,,v{s{31,s{'world,'anyone}}},1  response:: '/dubbo/com.xiaohao.serviceApi.DemoService/providers/dubbo%253A%252F%252F192.168.1.35%253A20880%252Fcom.xiaohao.serviceApi.DemoService%253Fanyhost%253Dtrue%2526application%253DdubboDemo%2526dubbo%253D2.5.3%2526interface%253Dcom.xiaohao.serviceApi.DemoService%2526methods%253DsayHello%2526pid%253D5764%2526side%253Dprovider%2526timestamp%253D1406617268963  | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(838)
+[VAMS][2014-07-29 15:01:09,549] INFO |  [DUBBO] Subscribe: provider://192.168.1.35:20880/com.xiaohao.serviceApi.DemoService?anyhost=true&application=dubboDemo&category=configurators&check=false&dubbo=2.5.3&interface=com.xiaohao.serviceApi.DemoService&methods=sayHello&pid=5764&side=provider&timestamp=1406617268963, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(325)
+[VAMS][2014-07-29 15:01:09,560] DEBUG | Reading reply sessionid:0x14780049d280001, packet:: clientPath:null serverPath:null finished:false header:: 5,1  replyHeader:: 5,110,-110  request:: '/dubbo,,v{s{31,s{'world,'anyone}}},0  response::   | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(838)
+[VAMS][2014-07-29 15:01:09,572] DEBUG | Reading reply sessionid:0x14780049d280001, packet:: clientPath:null serverPath:null finished:false header:: 6,1  replyHeader:: 6,111,-110  request:: '/dubbo/com.xiaohao.serviceApi.DemoService,,v{s{31,s{'world,'anyone}}},0  response::   | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(838)
+[VAMS][2014-07-29 15:01:09,585] DEBUG | Reading reply sessionid:0x14780049d280001, packet:: clientPath:null serverPath:null finished:false header:: 7,1  replyHeader:: 7,112,-110  request:: '/dubbo/com.xiaohao.serviceApi.DemoService/configurators,,v{s{31,s{'world,'anyone}}},0  response::   | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(838)
+[VAMS][2014-07-29 15:01:09,590] DEBUG | Reading reply sessionid:0x14780049d280001, packet:: clientPath:null serverPath:null finished:false header:: 8,3  replyHeader:: 8,112,0  request:: '/dubbo/com.xiaohao.serviceApi.DemoService/configurators,T  response:: s{34,34,1406182492310,1406182492310,0,0,0,0,0,0,34}  | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(838)
+[VAMS][2014-07-29 15:01:09,594] DEBUG | Reading reply sessionid:0x14780049d280001, packet:: clientPath:null serverPath:null finished:false header:: 9,8  replyHeader:: 9,112,0  request:: '/dubbo/com.xiaohao.serviceApi.DemoService/configurators,T  response:: v{}  | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(838)
+[VAMS][2014-07-29 15:01:09,594] INFO |  [DUBBO] Notify urls for subscribe url provider://192.168.1.35:20880/com.xiaohao.serviceApi.DemoService?anyhost=true&application=dubboDemo&category=configurators&check=false&dubbo=2.5.3&interface=com.xiaohao.serviceApi.DemoService&methods=sayHello&pid=5764&side=provider&timestamp=1406617268963, urls: [empty://192.168.1.35:20880/com.xiaohao.serviceApi.DemoService?anyhost=true&application=dubboDemo&category=configurators&check=false&dubbo=2.5.3&interface=com.xiaohao.serviceApi.DemoService&methods=sayHello&pid=5764&side=provider&timestamp=1406617268963], dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.registry.support.AbstractRegistry.notify(422)
+[VAMS][2014-07-29 15:01:09,602] DEBUG |  [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class RouterFactory$Adpative implements com.alibaba.dubbo.rpc.cluster.RouterFactory {
+public com.alibaba.dubbo.rpc.cluster.Router getRouter(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getProtocol();
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.RouterFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.cluster.RouterFactory extension = (com.alibaba.dubbo.rpc.cluster.RouterFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.RouterFactory.class).getExtension(extName);
+return extension.getRouter(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.common.extension.ExtensionLoader.createAdaptiveExtensionClassCode(943)
+[VAMS][2014-07-29 15:01:09,608] DEBUG |  [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ConfiguratorFactory$Adpative implements com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory {
+public com.alibaba.dubbo.rpc.cluster.Configurator getConfigurator(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getProtocol();
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory extension = (com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory.class).getExtension(extName);
+return extension.getConfigurator(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1 | [main] com.alibaba.dubbo.common.extension.ExtensionLoader.createAdaptiveExtensionClassCode(943)
+[VAMS][2014-07-29 15:01:09,615] DEBUG | Searching for key 'spring.liveBeansView.mbeanDomain' in [servletConfigInitParams] | [main] org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(81)
+[VAMS][2014-07-29 15:01:09,615] DEBUG | Searching for key 'spring.liveBeansView.mbeanDomain' in [servletContextInitParams] | [main] org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(81)
+[VAMS][2014-07-29 15:01:09,615] DEBUG | Searching for key 'spring.liveBeansView.mbeanDomain' in [jndiProperties] | [main] org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(81)
+[VAMS][2014-07-29 15:01:09,616] DEBUG | Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain] | [main] org.springframework.jndi.JndiTemplate.lookup(150)
+[VAMS][2014-07-29 15:01:09,616] DEBUG | Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name spring.liveBeansView.mbeanDomain is not bound in this Context | [main] org.springframework.jndi.JndiLocatorSupport.lookup(101)
+[VAMS][2014-07-29 15:01:09,617] DEBUG | Looking up JNDI object with name [spring.liveBeansView.mbeanDomain] | [main] org.springframework.jndi.JndiTemplate.lookup(150)
+[VAMS][2014-07-29 15:01:09,617] DEBUG | JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name spring.liveBeansView.mbeanDomain is not bound in this Context. Returning null. | [main] org.springframework.jndi.JndiPropertySource.getProperty(87)
+[VAMS][2014-07-29 15:01:09,617] DEBUG | Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties] | [main] org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(81)
+[VAMS][2014-07-29 15:01:09,617] DEBUG | Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment] | [main] org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(81)
+[VAMS][2014-07-29 15:01:09,618] DEBUG | Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null] | [main] org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(103)
+[VAMS][2014-07-29 15:01:09,618] DEBUG | Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT] | [main] org.springframework.web.context.ContextLoader.initWebApplicationContext(320)
+[VAMS][2014-07-29 15:01:09,618] INFO | Root WebApplicationContext: initialization completed in 1490 ms | [main] org.springframework.web.context.ContextLoader.initWebApplicationContext(325)
+[VAMS][2014-07-29 15:01:19,594] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:01:29,595] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:01:39,595] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:01:49,596] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:01:59,597] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:02:09,597] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:02:19,599] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:02:29,599] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:02:39,599] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:02:49,600] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:02:59,601] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:03:09,602] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:03:19,603] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:03:29,604] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:03:39,604] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:03:49,604] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:03:59,606] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:04:09,607] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:04:19,610] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 3ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:04:29,608] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:04:39,608] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:04:49,610] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:04:59,611] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:05:09,613] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:05:19,613] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:05:29,614] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:05:39,615] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:05:49,617] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:05:59,619] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:06:09,620] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:06:19,620] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:06:29,622] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:06:39,622] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:06:49,624] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:06:59,625] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:07:09,625] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:07:19,626] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:07:29,627] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:07:39,627] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:07:49,630] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:07:59,630] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:08:09,631] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:08:19,631] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:08:29,633] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:08:39,633] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:08:49,635] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:08:59,637] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:09:09,636] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:09:19,638] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:09:29,639] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:09:39,642] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:09:49,642] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:09:59,642] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:10:09,645] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:10:19,645] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:10:29,646] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:10:39,646] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:10:49,647] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:10:59,647] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:11:09,649] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:11:19,652] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:11:29,651] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:11:39,654] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:11:49,653] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:11:59,656] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:12:09,656] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:12:19,657] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:12:29,658] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:12:39,658] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:12:49,659] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:12:59,660] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 2ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:13:09,661] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:13:19,661] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:13:29,662] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:13:39,663] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:13:49,662] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:13:59,665] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:14:09,667] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 3ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:14:19,666] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:14:29,666] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:14:39,667] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:14:49,667] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:14:59,669] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:15:09,672] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:15:19,672] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:15:29,674] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:15:39,674] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:15:49,675] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:15:59,676] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:16:09,676] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:16:19,677] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:16:29,676] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:16:39,679] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:16:49,679] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:16:59,680] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:17:09,680] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:17:19,682] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:17:29,683] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:17:39,682] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:17:49,684] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:17:59,686] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:18:09,687] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:18:19,688] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:18:29,688] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:18:39,688] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:18:49,690] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:18:59,690] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:19:09,692] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:19:19,692] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:19:29,695] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:19:39,695] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:19:49,696] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:19:59,696] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:20:09,697] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:20:19,697] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:20:29,698] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:20:39,698] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:20:49,699] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:20:59,700] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:21:09,706] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:21:19,707] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:21:29,707] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:21:39,707] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:21:49,709] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:21:59,710] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:22:09,713] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:22:19,712] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:22:29,714] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:22:39,715] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:22:49,717] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:22:59,719] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:23:09,720] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:23:19,724] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 2ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:23:29,723] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:23:39,726] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:23:49,725] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:23:59,727] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:24:09,728] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:24:19,727] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:24:29,729] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:24:39,730] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:24:49,732] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:24:59,733] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:25:09,735] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:25:19,737] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:25:29,738] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:25:39,740] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:25:49,742] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:25:59,743] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:26:09,743] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:26:19,743] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:26:29,749] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 4ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:26:39,747] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:26:49,748] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:26:59,748] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:27:09,748] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:27:19,754] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 4ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:27:29,752] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:27:39,754] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:27:49,755] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:27:59,757] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:28:09,758] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:28:19,761] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:28:29,761] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:28:39,764] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:28:49,765] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:28:59,766] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:29:09,766] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:29:19,767] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:29:29,770] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:29:39,769] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:29:49,771] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:29:59,774] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:30:09,774] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:30:19,776] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:30:29,777] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:30:39,779] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:30:49,781] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:30:59,783] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:31:09,783] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:31:19,784] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:31:29,786] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:31:39,788] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:31:49,789] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:31:59,790] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:32:09,792] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:32:19,794] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:32:29,795] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:32:39,797] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:32:49,798] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:32:59,800] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:33:09,801] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:33:19,803] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:33:29,805] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:33:39,806] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:33:49,808] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:33:59,809] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:34:09,811] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:34:19,813] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:34:29,815] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:34:39,816] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:34:49,815] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:34:59,817] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:35:09,818] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:35:19,818] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:35:29,820] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:35:39,821] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:35:49,822] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:35:59,821] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:36:09,824] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:36:19,824] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:36:29,827] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:36:39,827] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:36:49,829] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:36:59,831] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:37:09,831] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:37:19,833] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:37:29,835] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:37:39,836] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:37:49,837] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:37:59,839] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:38:09,841] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:38:19,842] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:38:29,844] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:38:39,845] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:38:49,847] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:38:59,848] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:39:09,850] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:39:19,853] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:39:29,852] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:39:39,855] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:39:49,855] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:39:59,857] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:40:09,859] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:40:19,860] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:40:29,861] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:40:39,863] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:40:49,864] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:40:59,863] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:41:09,866] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:41:19,868] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:41:29,868] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:41:39,869] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:41:49,869] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:41:59,870] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:42:09,872] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:42:19,872] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:42:29,876] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 2ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:42:39,874] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:42:49,877] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:42:59,877] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:43:09,879] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:43:19,878] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:43:29,880] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:43:39,882] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:43:49,883] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:43:59,885] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:44:09,886] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:44:19,889] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:44:29,889] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:44:39,889] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:44:49,892] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:44:59,892] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:45:09,893] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:45:19,894] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:45:29,896] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:45:39,897] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:45:49,899] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:45:59,902] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:46:09,901] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:46:19,903] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:46:29,905] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:46:39,906] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:46:49,907] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:46:59,908] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:47:09,908] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:47:19,909] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:47:29,912] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:47:39,912] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:47:49,914] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:47:59,915] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:48:09,917] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:48:19,919] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:48:29,920] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:48:39,921] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:48:49,922] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:48:59,924] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:49:09,928] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 3ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:49:19,927] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:49:29,928] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:49:39,927] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:49:49,929] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:49:59,930] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:50:09,932] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:50:19,933] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:50:29,935] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:50:39,935] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:50:49,937] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:50:59,938] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:51:09,939] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:51:19,941] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:51:29,942] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:51:39,945] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:51:49,946] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:51:59,948] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:52:09,950] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:52:19,949] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:52:29,952] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:52:39,951] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:52:49,953] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:52:59,955] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:53:09,955] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:53:19,956] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:53:29,955] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:53:39,957] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:53:49,958] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:53:59,961] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:54:09,962] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:54:19,963] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:54:29,963] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:54:39,965] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:54:49,965] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:54:59,968] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 2ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:55:09,967] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:55:19,969] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:55:29,969] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:55:39,970] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:55:49,971] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:55:59,974] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:56:09,973] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:56:19,975] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:56:29,978] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:56:39,977] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:56:49,979] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:56:59,980] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:57:09,982] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:57:19,983] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:57:29,986] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 2ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:57:39,990] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 4ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:57:49,988] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:57:59,990] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:58:09,990] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:58:20,010] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 3ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:58:30,007] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:58:40,009] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:58:50,010] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:59:00,009] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:59:10,012] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:59:20,012] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:59:30,013] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:59:40,012] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 15:59:50,014] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:00:00,016] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:00:10,016] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:00:20,019] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:00:30,019] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:00:40,021] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:00:50,020] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:01:00,022] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:01:10,024] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:01:20,025] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:01:30,028] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:01:40,034] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:01:50,035] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:02:00,034] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:02:10,037] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:02:20,039] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:02:30,038] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:02:40,041] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:02:50,041] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:03:00,042] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:03:10,042] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:03:20,043] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:03:30,045] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:03:40,045] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:03:50,046] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:04:00,046] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:04:10,047] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:04:20,048] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:04:30,049] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:04:40,050] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:04:50,050] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:05:00,050] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:05:10,052] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:05:20,052] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:05:30,053] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:05:40,056] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)

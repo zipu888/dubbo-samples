@@ -116,6 +116,7 @@
           <groupId>com.alibaba</groupId>
           <artifactId>dubbo</artifactId>
           <version>2.5.3</version>
+          <!--摈除老版本的spring-->
           <exclusions>
               <exclusion>
                   <groupId>org.springframework</groupId>
@@ -268,5 +269,16 @@
   </dependencies>
   <build>
     <finalName>dubboDemo</finalName>
+      <plugins>
+          <!--使用tomcat plugin 自定义端口9999-->
+          <plugin>
+              <groupId>org.apache.tomcat.maven</groupId>
+              <artifactId>tomcat6-maven-plugin</artifactId>
+              <version>2.2</version>
+              <configuration>
+                  <port>9999</port>
+              </configuration>
+          </plugin>
+      </plugins>
   </build>
 </project>
