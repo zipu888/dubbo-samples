@@ -1856,3 +1856,8 @@ return extension.getConfigurator(arg0);
 [VAMS][2014-07-29 16:44:00,350] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
 [VAMS][2014-07-29 16:44:10,351] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
 [VAMS][2014-07-29 16:44:20,353] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:44:30,354] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 2ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:44:40,353] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:44:50,353] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:45:00,358] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 1ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
+[VAMS][2014-07-29 16:45:10,358] DEBUG | Got ping response for sessionid: 0x14780049d280001 after 0ms | [main-SendThread(xiaohao-PC:2181)] org.apache.zookeeper.ClientCnxn$SendThread.readResponse(758)
