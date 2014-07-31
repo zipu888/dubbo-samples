@@ -264,6 +264,12 @@
           <artifactId>cache-api</artifactId>
           <version>${jcache.version}</version>
       </dependency>
+    <!--添加 curator zookeeper客户端-->
+      <dependency>
+          <groupId>com.netflix.curator</groupId>
+          <artifactId>curator-framework</artifactId>
+          <version>1.0.1</version>
+      </dependency>
 
 
   </dependencies>
