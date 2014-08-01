@@ -32,10 +32,10 @@
 
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
     <dubbo:reference id="demoService" interface="com.xiaohao.dubbodemo.service.IDubboDemoService" />
-    <bean id="springContextUtil" class="com.xiaohao.dubbodemo.consumer.util.SpringContextUtil"></bean>
-
     <!-- 用于自动载入controller -->
-   <bean id="startor" class="com.xiaohao.dubbodemo.consumer.DubboCallor"></bean>
+   <bean id="startor" class="com.xiaohao.dubbodemo.consumer.DubboCallor" init-method="test">
+      <property name="service" ref="demoService"></property>
+   </bean>
 
 
 

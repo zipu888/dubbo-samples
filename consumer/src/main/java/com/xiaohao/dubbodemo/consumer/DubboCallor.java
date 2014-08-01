@@ -12,11 +12,9 @@ import javax.annotation.Resource;
  * Created by xiaohao on 2014/8/1.
  *
  */
-@Component
 public class DubboCallor {
-    @Resource(name="demoService")
+
     IDubboDemoService service;
-    @PostConstruct
     public void test(){
         System.out.println("TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT");
        String result =service.sayHello("xiaopang");
