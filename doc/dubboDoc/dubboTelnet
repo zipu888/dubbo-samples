@@ -1,0 +1,35 @@
+dubbo>help
+Please input "help [command]" show detail.
+ count [service] [method] [times] - Count the service.
+ status [-l]                      - Show status.
+ cd [service]                     - Change default service.
+ ps [-l] [port]                   - Print server ports and connections.
+ invoke [service.]method(args)    - Invoke the service method.
+ ls [-l] [service]                - List services and methods.
+ help [command]                   - Show help.
+ exit                             - Exit the telnet.
+ clear [lines]                    - Clear screen.
+ trace [service] [method] [times] - Trace the service.
+ pwd                              - Print working default service.
+ log level                        - Change log level or show log
+dubbo>status -l
++------------+--------+--------------------------------------------------------+
+| resource   | status | message                                                |
++------------+--------+--------------------------------------------------------+
+| spring     | OK     | classpath:provider.xml                                 |
+| registry   | OK     | 192.168.1.35:2181(connected)                           |
+| memory     | OK     | max:247M,total:30M,used:15M,free:15M                   |
+| threadpool | OK     | Pool status:OK, max:200, core:200, largest:12, active:1,
+ task:12, service port: 20881 |
+| server     | OK     | /192.168.1.35:20881(clients:1)                         |
+| summary    | OK     |                                                        |
++------------+--------+--------------------------------------------------------+
+
+
+dubbo>ls -l
+com.xiaohao.dubbodemo.service.IDubboDemoService -> dubbo://192.168.1.35:20881/co
+m.xiaohao.dubbodemo.service.IDubboDemoService?anyhost=true&application=dubboDemo
+&dubbo=2.5.3&group=test&interface=com.xiaohao.dubbodemo.service.IDubboDemoServic
+e&methods=sayMorning,sayHello&pid=8644&revision=1.0-SNAPSHOT&side=provider&times
+tamp=1406881004166
+dubbo>
