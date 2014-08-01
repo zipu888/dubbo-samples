@@ -3,3 +3,9 @@
 /.idea
 /log/test.log
 /log
+/serviceapi/target
+/serviceapi/*.iml
+/provider/target
+/provider/*.iml
+/consumer/target
+/consumer/*.iml
