@@ -31,7 +31,7 @@
     <dubbo:registry protocol="zookeeper" address="192.168.1.35:2181" />
 
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
-    <dubbo:reference id="demoService" interface="com.xiaohao.dubbodemo.service.IDubboDemoService" />
+    <dubbo:reference id="demoService" group="test" interface="com.xiaohao.dubbodemo.service.IDubboDemoService" />
     <!-- 用于自动载入controller -->
    <bean id="startor" class="com.xiaohao.dubbodemo.consumer.DubboCallor" init-method="test">
       <property name="service" ref="demoService"></property>

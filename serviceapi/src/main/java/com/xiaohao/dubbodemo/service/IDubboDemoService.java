@@ -7,4 +7,6 @@ public interface IDubboDemoService {
 
     public String sayHello(String name);
 
+    public String sayMorning(String name);
+
 }

@@ -16,9 +16,15 @@ public class DubboCallor {
 
     IDubboDemoService service;
     public void test(){
-        System.out.println("TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT");
-       String result =service.sayHello("xiaopang");
+        System.out.println("####################################################################################################");
+        System.out.println();
+        String result =service.sayHello("xiaopang");
+        String result1 =service.sayMorning("xiaoli");
         System.out.println(result);
+        System.out.println(result1);
+        System.out.println();
+        System.out.println("####################################################################################################");
+
     }
 
     public IDubboDemoService getService() {

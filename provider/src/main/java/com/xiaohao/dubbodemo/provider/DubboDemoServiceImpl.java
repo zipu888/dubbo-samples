@@ -11,4 +11,10 @@ public class DubboDemoServiceImpl implements IDubboDemoService {
     public String sayHello(String name) {
         return "hello"+name;
     }
+
+
+    @Override
+    public String sayMorning(String name) {
+        return "good morning "+name;
+    }
 }
