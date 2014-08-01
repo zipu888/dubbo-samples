@@ -22,7 +22,8 @@
           http://code.alibabatech.com/schema/dubbo
           http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-
+    <context:annotation-config></context:annotation-config>
+    <context:component-scan base-package="com.xiaohao.dubbodemo.consumer.*"></context:component-scan>
     <!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
     <dubbo:application name="dubboDemo"  />
 
@@ -30,6 +31,12 @@
     <dubbo:registry protocol="zookeeper" address="192.168.1.35:2181" />
 
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
-    <dubbo:reference id="demoService" interface="com.xiaohao.serviceApi.DemoService" />
+    <dubbo:reference id="demoService" interface="com.xiaohao.dubbodemo.service.IDubboDemoService" />
+    <bean id="springContextUtil" class="com.xiaohao.dubbodemo.consumer.util.SpringContextUtil"></bean>
+
+    <!-- 用于自动载入controller -->
+   <bean id="startor" class="com.xiaohao.dubbodemo.consumer.DubboCallor"></bean>
+
+
 
 </beans>
