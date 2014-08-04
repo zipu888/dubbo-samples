@@ -1,12 +1,9 @@
 package com.xiaohao.dubbodemo.consumer;
 
-import com.xiaohao.dubbodemo.consumer.util.SpringContextUtil;
 import com.xiaohao.dubbodemo.service.IDubboDemoService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
+import com.xiaohao.dubbodemo.service.IDubboHessianDemoService;
+import com.xiaohao.dubbodemo.service.IDubboRmiDemoService;
+import com.xiaohao.dubbodemo.service.IDubboWebServiceDemoService;
 
 /**
  * Created by xiaohao on 2014/8/1.
@@ -15,13 +12,18 @@ import javax.annotation.Resource;
 public class DubboCallor {
 
     IDubboDemoService service;
+    IDubboHessianDemoService hessianDemoService;
+    IDubboRmiDemoService rmiDemoService;
+    IDubboWebServiceDemoService webServiceDemoService;
     public void test(){
         System.out.println("####################################################################################################");
         System.out.println();
         String result =service.sayHello("xiaopang");
-        String result1 =service.sayMorning("xiaoli");
         System.out.println(result);
-        System.out.println(result1);
+        String rmiResult =rmiDemoService.rmiSayHello("xiaohaohao");
+        System.out.println(rmiResult);
+        String hasseinResult =hessianDemoService.hasseinSayHello("xiaohaolilili");
+        System.out.println(hasseinResult);
         System.out.println();
         System.out.println("####################################################################################################");
 
@@ -33,5 +35,29 @@ public class DubboCallor {
 
     public void setService(IDubboDemoService service) {
         this.service = service;
+    }
+
+    public IDubboHessianDemoService getHessianDemoService() {
+        return hessianDemoService;
+    }
+
+    public void setHessianDemoService(IDubboHessianDemoService hessianDemoService) {
+        this.hessianDemoService = hessianDemoService;
+    }
+
+    public IDubboRmiDemoService getRmiDemoService() {
+        return rmiDemoService;
+    }
+
+    public void setRmiDemoService(IDubboRmiDemoService rmiDemoService) {
+        this.rmiDemoService = rmiDemoService;
+    }
+
+    public IDubboWebServiceDemoService getWebServiceDemoService() {
+        return webServiceDemoService;
+    }
+
+    public void setWebServiceDemoService(IDubboWebServiceDemoService webServiceDemoService) {
+        this.webServiceDemoService = webServiceDemoService;
     }
 }

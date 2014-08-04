@@ -11,4 +11,14 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:provider.xml</param-value>
     </context-param>
+
+    <servlet>
+        <servlet-name>dubbo</servlet-name>
+        <servlet-class>com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dubbo</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
 </web-app>

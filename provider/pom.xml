@@ -214,7 +214,14 @@
             <groupId>com.netflix.curator</groupId>
             <artifactId>curator-framework</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-simple</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-http</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -225,7 +232,7 @@
                 <artifactId>maven-jetty-plugin</artifactId>
                 <version>6.1.10</version>
                 <configuration>
-                    <stopPort>9090</stopPort>
+                    <stopPort>9898</stopPort>
                     <stopKey>xiaohao</stopKey>
                     <webApp>
                         <contextPath>xiaohao_test</contextPath>
@@ -234,7 +241,7 @@
                     <connectors>
                         <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
                             <!--定义jetty运行的端口-->
-                            <port>9090</port>
+                            <port>9898</port>
                         </connector>
                     </connectors>
                 </configuration>
