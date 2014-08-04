@@ -9,3 +9,5 @@
 /provider/*.iml
 /consumer/target
 /consumer/*.iml
+/consumer/log
+/provider/log
