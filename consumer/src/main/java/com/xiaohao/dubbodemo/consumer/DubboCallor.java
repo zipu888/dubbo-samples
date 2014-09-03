@@ -12,9 +12,14 @@ import com.xiaohao.dubbodemo.service.IDubboWebServiceDemoService;
 public class DubboCallor {
 
     IDubboDemoService service;
+
     IDubboHessianDemoService hessianDemoService;
+
     IDubboRmiDemoService rmiDemoService;
+
     IDubboWebServiceDemoService webServiceDemoService;
+
+
     public void test(){
         System.out.println("####################################################################################################");
         System.out.println();
