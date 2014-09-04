@@ -43,7 +43,7 @@
     <dubbo:protocol name="hessian" port="9898" server="servlet" contextpath="provider"/>
 
     <!--&lt;!&ndash; port 要和容器的端口一直 contentpath 就是应用名 推荐 server=servlet web.xml需要设置一个servlet&ndash;&gt;-->
-    <!--<dubbo:protocol name="webservice" port="9898" server="servlet" contextpath="provider"/>-->
+    <dubbo:protocol name="webservice" port="9898" server="servlet" path="webServices"/>
 
     <!-- 和本地bean一样实现服务 -->
     <bean id="demoService" class="com.xiaohao.dubbodemo.provider.DubboDemoServiceImpl" />
@@ -52,14 +52,14 @@
 
     <bean id="hessianDemoService" class="com.xiaohao.dubbodemo.provider.DubboHessianDemoServiceImpl"/>
 
-    <!--<bean id="webServiceDemoService" class="com.xiaohao.dubbodemo.provider.DubboWebServiceDemoServiceImpl"/>-->
+    <bean id="webServiceDemoService" class="com.xiaohao.dubbodemo.provider.DubboWebServiceDemoServiceImpl"/>
 
     <!-- 声明需要暴露的服务接口 -->
     <dubbo:service interface="com.xiaohao.dubbodemo.service.IDubboDemoService" protocol="dubbo" group="test" ref="demoService" />
     <dubbo:service interface="com.xiaohao.dubbodemo.service.IDubboRmiDemoService" protocol="rmi" group="test" ref="rmiDemoService"/>
     <dubbo:service interface="com.xiaohao.dubbodemo.service.IDubboHessianDemoService" protocol="hessian" group="test" ref="hessianDemoService"/>
 
-    <!--<dubbo:service interface="com.xiaohao.dubbodemo.service.IDubboWebServiceDemoService" protocol="webservice" group="test" ref="webServiceDemoService"/>-->
+    <dubbo:service interface="com.xiaohao.dubbodemo.service.IDubboWebServiceDemoService" protocol="webservice" ref="webServiceDemoService"/>
     <context:component-scan base-package="com.xiaohao.*"></context:component-scan>
 
 

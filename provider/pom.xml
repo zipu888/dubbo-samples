@@ -232,7 +232,7 @@
                 <artifactId>maven-jetty-plugin</artifactId>
                 <version>6.1.10</version>
                 <configuration>
-                    <stopPort>9898</stopPort>
+                    <stopPort>9797</stopPort>
                     <stopKey>xiaohao</stopKey>
                     <webApp>
                         <contextPath>xiaohao_test</contextPath>
