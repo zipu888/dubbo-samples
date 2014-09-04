@@ -31,8 +31,8 @@ public class DubboCallor {
         System.out.println(hasseinResult);
         System.out.println();
         System.out.println("####################################################################################################");
-        String webService = webServiceDemoService.webServiceSayHello("web Service");
-        System.out.println(webService);
+       // String webService = webServiceDemoService.webServiceSayHello("web Service");
+       // System.out.println(webService);
     }
 
     public IDubboDemoService getService() {

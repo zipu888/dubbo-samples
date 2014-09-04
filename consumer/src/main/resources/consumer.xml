@@ -34,13 +34,13 @@
     <dubbo:reference id="demoService" group="test" interface="com.xiaohao.dubbodemo.service.IDubboDemoService" />
     <dubbo:reference id="rmiDemoService" group="test" interface="com.xiaohao.dubbodemo.service.IDubboRmiDemoService" />
     <dubbo:reference id="hessianDemoService" group="test" interface="com.xiaohao.dubbodemo.service.IDubboHessianDemoService" />
-    <dubbo:reference id="webServiceDemoService" interface="com.xiaohao.dubbodemo.service.IDubboWebServiceDemoService" protocol="webservice"/>
+    <!--<dubbo:reference id="webServiceDemoService" interface="com.xiaohao.dubbodemo.service.IDubboWebServiceDemoService" protocol="webservice"/>-->
     <!-- 用于自动载入controller -->
    <bean id="startor" class="com.xiaohao.dubbodemo.consumer.DubboCallor" init-method="test">
       <property name="service" ref="demoService"></property>
        <property name="hessianDemoService" ref="hessianDemoService"></property>
        <property name="rmiDemoService" ref="rmiDemoService"></property>
-       <property name="webServiceDemoService" ref="webServiceDemoService"></property>
+       <!--<property name="webServiceDemoService" ref="webServiceDemoService"></property>-->
    </bean>
 
 
