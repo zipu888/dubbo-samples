@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions name="IDubboWebServiceDemoService" targetNamespace="http://service.dubbodemo.xiaohao.com/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://service.dubbodemo.xiaohao.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://service.dubbodemo.xiaohao.com/" xmlns:tns="http://service.dubbodemo.xiaohao.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="webServiceSayHello" type="tns:webServiceSayHello"/>
+  <xsd:complexType name="webServiceSayHello">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="webServiceSayHelloResponse" type="tns:webServiceSayHelloResponse"/>
+  <xsd:complexType name="webServiceSayHelloResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="webServiceSayHello">
+    <wsdl:part element="tns:webServiceSayHello" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="webServiceSayHelloResponse">
+    <wsdl:part element="tns:webServiceSayHelloResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="IDubboWebServiceDemoServicePortType">
+    <wsdl:operation name="webServiceSayHello">
+      <wsdl:input message="tns:webServiceSayHello" name="webServiceSayHello">
+    </wsdl:input>
+      <wsdl:output message="tns:webServiceSayHelloResponse" name="webServiceSayHelloResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IDubboWebServiceDemoServiceSoapBinding" type="tns:IDubboWebServiceDemoServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="webServiceSayHello">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="webServiceSayHello">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="webServiceSayHelloResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IDubboWebServiceDemoService">
+    <wsdl:port binding="tns:IDubboWebServiceDemoServiceSoapBinding" name="IDubboWebServiceDemoServicePort">
+      <soap:address location="http://192.168.1.22:9898/provider/webServices/com.xiaohao.dubbodemo.service.IDubboWebServiceDemoService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
