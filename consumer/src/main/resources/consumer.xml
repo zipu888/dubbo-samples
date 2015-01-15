@@ -28,10 +28,10 @@
     <dubbo:application name="dubboDemo"  />
 
     <!-- 使用multicast广播注册中心暴露发现服务地址 -->
-    <dubbo:registry protocol="zookeeper" address="192.168.1.22:2181,192.168.1.22:2182,192.168.1.22:2183" />
+    <dubbo:registry protocol="zookeeper" address="192.168.1.38:2181,192.168.1.38:2182,192.168.1.38:2183" />
     <dubbo:protocol name="webservice" port="9898" server="servlet" path="webServices"/>
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
-    <dubbo:reference id="demoService" group="test" interface="com.xiaohao.dubbodemo.service.IDubboDemoService" />
+    <dubbo:reference id="demoService" group="test" interface="com.xiaohao.dubbodemo.service.IDubboDemoService" validation="true"/>
     <dubbo:reference id="rmiDemoService" group="test" interface="com.xiaohao.dubbodemo.service.IDubboRmiDemoService" />
     <dubbo:reference id="hessianDemoService" group="test" interface="com.xiaohao.dubbodemo.service.IDubboHessianDemoService" />
     <!--<dubbo:reference id="webServiceDemoService" interface="com.xiaohao.dubbodemo.service.IDubboWebServiceDemoService" protocol="webservice"/>-->
