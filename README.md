@@ -11,3 +11,8 @@ Hello dubboDemo
 * doc是一些dubbo的文档
 
 ci status  [![Build Status](https://travis-ci.org/zipu888/dubboDemo.svg?branch=master)](https://travis-ci.org/zipu888/dubboDemo)
+
+
+#### spring boot 集成dubbo
+
+[spring-boot-dubbo-sample]](https://github.com/zipu888/spring-boot-dubbo-sample)
