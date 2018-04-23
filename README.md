@@ -15,4 +15,4 @@ ci status  [![Build Status](https://travis-ci.org/zipu888/dubboDemo.svg?branch=m
 
 #### spring boot 集成dubbo
 
-[spring-boot-dubbo-sample]](https://github.com/zipu888/spring-boot-dubbo-sample)
+[spring-boot-dubbo-sample](https://github.com/zipu888/spring-boot-dubbo-sample)
